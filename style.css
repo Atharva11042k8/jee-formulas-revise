@@ -1,0 +1,210 @@
+/* --- Modern Dark Theme CSS --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); /* Clean sans-serif font */
+
+:root {
+    --bg-dark-deep: #0d1117;    /* Deep dark (like GitHub dark) */
+    --bg-dark-primary: #161b22; /* Primary dark background for container */
+    --bg-dark-secondary: #21262d;/* Secondary dark for cards/inputs */
+    --text-light: #c9d1d9;     /* Light gray for primary text */
+    --text-medium: #8b949e;    /* Medium gray for labels/secondary text */
+    --accent-blue: #58a6ff;    /* Bright blue for primary actions */
+    --accent-pink: #f778ba;    /* Pink for secondary actions or highlights */
+    --border-color: #30363d;   /* Subtle border color */
+    --glow-blue: rgba(88, 166, 255, 0.3);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--bg-dark-deep);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 20px; /* Add some padding for smaller screens */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: var(--bg-dark-primary);
+    padding: clamp(25px, 5vw, 40px); /* Responsive padding */
+    border-radius: 12px; /* Softer radius */
+    box-shadow: 0 8px 25px var(--shadow-color), 0 0 1px var(--border-color); /* Subtle depth */
+    border: 1px solid var(--border-color);
+    transform: translateY(0); /* For potential GSAP entry animation */
+    opacity: 1; /* For potential GSAP entry animation */
+    word-break: break-word;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px; /* More space */
+    font-size: clamp(1.8rem, 5vw, 2.2rem); /* Responsive font size */
+    color: var(--accent-blue);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px var(--glow-blue);
+    word-break: break-word;
+}
+
+label {
+    display: block;
+    margin-top: 20px; /* Increased spacing */
+    margin-bottom: 8px;
+    color: var(--text-medium);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+select, button { /* Shared styles for select and button */
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color); /* Consistent border */
+    font-family: var(--font-main);
+    transition: all 0.25s ease-out; /* Smooth transitions for all states */
+}
+
+select {
+    background: var(--bg-dark-secondary);
+    color: var(--text-light);
+    appearance: none; /* Remove default system styling */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20fill%3D%22%238b949e%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14%202.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.7em auto;
+    cursor: pointer;
+}
+select:disabled {
+    background-color: rgba(33, 38, 45, 0.7); /* Slightly different disabled bg */
+    color: var(--text-darker);
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.25), 0 0 10px var(--glow-blue);
+}
+
+
+button {
+    background: var(--accent-blue);
+    color: white;
+        font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+button:disabled {
+    background-color: var(--text-darker);
+    color: var(--bg-dark-secondary);
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
+}
+button:not(:disabled):hover {
+    background: #4791e8; /* Slightly lighter blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(88, 166, 255, 0.2);
+}
+button:not(:disabled):active {
+    transform: translateY(0px) scale(0.98);
+}
+
+/* Specific styling for different button roles */
+#reveal-btn {
+    background: linear-gradient(45deg, var(--accent-pink), #da62a2);
+    color: white;
+}
+#reveal-btn:hover {
+    background: linear-gradient(45deg, #da62a2, var(--accent-pink));
+    box-shadow: 0 5px 15px rgba(247, 120, 186, 0.2);
+}
+
+
+#question-container, #answer-container {
+    margin: 25px 0; /* More spacing */
+    padding: clamp(15px, 3vw, 25px); /* Responsive padding */
+    background-color: var(--bg-dark-secondary);
+    border: 1px solid var(--border-color); /* Subtle border */
+    border-radius: 10px; /* Softer radius */
+    min-height: 100px; /* Original min-height */
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2); /* Inner shadow for depth */
+    color: var(--text-light);
+    line-height: 1.7; /* Good for math formulas */
+    
+    
+    
+
+    
+}
+
+/* Style MathJax/KaTeX output if using the library */
+/* For example, this targets common MathJax output elements */
+#question-text .mjx-chtml, #answer-text .mjx-chtml {
+    font-size: 1.1em !important; /* Make math slightly larger */
+    
+    
+    
+    
+    
+}
+
+/* .card-face equivalent if you were using a card flip structure */
+.card-face {
+    font-size: 1.1rem;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px; /* More space */
+    gap: 15px; /* Space between buttons */
+}
+
+.buttons button {
+    flex: 1; /* Make buttons share space equally */
+}
+
+.hidden {
+    display: none !important; /* Ensures element is hidden */
+}
+
+
+/* Optional: Animation for container loading in (Can be triggered by JS) */
+.container-enter-active {
+    animation: fadeInScaleUp 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+@keyframes fadeInScaleUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .container { width: 95%; margin: 20px auto; padding: 20px;}
+    h1 { font-size: 1.6rem; }
+    select, button { padding: 10px 12px; font-size: 0.95rem;}
+    #question-container, #answer-container { padding: 15px; }
+    .buttons { flex-direction: column; gap: 10px; } /* Stack buttons on very small screens */
+    .buttons button { width: 100%; }
+}
+

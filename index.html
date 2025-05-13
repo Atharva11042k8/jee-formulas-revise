@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JEE Formula Flashcards</title>
+  <link rel="stylesheet" href="/style.css"/>
+
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+
+  <!-- GSAP Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  
+</head>
+
+<body>
+  <div class="container">
+    <h1>JEE Formula Flashcards</h1>
+
+    <div id="selection-screen">
+      <label for="subject-select">Select Subject:</label>
+      <select id="subject-select">
+        <option value="">Choose Subject</option>
+      </select>
+
+      <label for="chapter-select">Select Chapter:</label>
+      <select id="chapter-select" disabled>
+        <option value="">Choose Chapter</option>
+      </select>
+
+      <button id="start-btn" disabled>Start</button>
+    </div>
+
+    <div id="flashcard-screen" class="hidden">
+      <div id="question-container">
+        <p id="question-text"></p>
+      </div>
+      <div id="answer-container" class="hidden">
+        <p id="answer-text"></p>
+      </div>
+      <div class="buttons">
+        <button id="reveal-btn">Reveal Answer</button>
+        <button id="next-btn">Next Question</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

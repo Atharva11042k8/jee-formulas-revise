@@ -1,0 +1,18 @@
+[
+  {
+  "question": "\\vec{A}+\\vec{B}",
+  "answer": "\\sqrt{a^2+b^2+2abcos(\\theta)}"
+},
+{
+  "question": "\\vec{A}-\\vec{B}",
+  "answer": "\\sqrt{a^2+b^2-2abcos(\\theta)}"
+},
+{
+  "question": "tan(\\theta)",
+  "answer": "\\frac{b\\:sin(\\theta)}{a+b\\:cos(\\theta)}"
+},
+{
+  "question": "\\hat{A}",
+  "answer": "\\frac{\\vec{A}}{|A|}"
+}
+]
