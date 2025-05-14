@@ -1,1 +1,66 @@
-
+[
+  {
+    "question": "who\\;discover\\;e,p,n",
+    "answer": "jj\\;thompson,\\;goldsten,james\\;chadwick"
+  },
+  {
+    "question": "em\\;ratio\\;of\\; electron",
+    "answer": "1.76×10¹¹\\;c/kg"
+  },
+  {
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;e",
+    "answer": "\\frac{1}{1836}"
+  },
+  {
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;p",
+    "answer": "1"
+  },
+  {
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;n",
+    "answer": "1"
+  },
+  {
+    "question": "approx\\;relative\\; atomic\\;mass\\;of\\;α",
+    "answer": "4"
+  },
+  {
+    "question": "approx\\;relative\\;charge\\;e",
+    "answer": "-1"
+  },
+  {
+    "question": "approx\\;relative\\;charge\\;p",
+    "answer": "1"
+  },
+  {
+    "question": "approx\\;relative\\;charge\\;n",
+    "answer": "1"
+  },
+  {
+    "question": "approx\\;relative\\;charge\\;α",
+    "answer": "+2"
+  },
+  {
+    "question": "mass\\;of\\;e",
+    "answer": "9.1×10^{-31}\\;kg"
+  },
+  {
+    "question": "mass\\;of\\;p",
+    "answer": "1.673×10^{-27}\\;kg"
+  },
+  {
+    "question": "mass\\;of\\;n",
+    "answer": "1.675×10^{-27}\\;kg"
+  },
+  {
+    "question": "mass\\;of\\;α",
+    "answer": "4×1.67×10^{-27}\\;kg"
+  },
+  {
+    "question": "charge\\;on\\;e",
+    "answer": "-1.69×10^{-19}\\;c"
+  },
+  {
+    "question": "charge\\;on\\;α",
+    "answer": "+2×1.69×10^{-19}\\;c"
+  }
+]
