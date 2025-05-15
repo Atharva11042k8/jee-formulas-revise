@@ -1,18 +1,159 @@
+
 [
   {
-  "question": "\\vec{A}+\\vec{B}",
-  "answer": "\\sqrt{a^2+b^2+2abcos(\\theta)}"
-},
-{
-  "question": "\\vec{A}-\\vec{B}",
-  "answer": "\\sqrt{a^2+b^2-2abcos(\\theta)}"
-},
-{
-  "question": "tan(\\theta)",
-  "answer": "\\frac{b\\:sin(\\theta)}{a+b\\:cos(\\theta)}"
-},
-{
-  "question": "\\hat{A}",
-  "answer": "\\frac{\\vec{A}}{|A|}"
-}
+    "question": "\\vec{A} + \\vec{B}",
+    "answer": "\\sqrt{a^2 + b^2 + 2ab \\cos(\\theta)}"
+  },
+  {
+    "question": "\\vec{A} - \\vec{B}",
+    "answer": "\\sqrt{a^2 + b^2 - 2ab \\cos(\\theta)}"
+  },
+  {
+    "question": "\\tan(\\theta)",
+    "answer": "\\frac{b \\sin(\\theta)}{a + b \\cos(\\theta)}"
+  },
+  {
+    "question": "\\hat{A}",
+    "answer": "\\frac{\\vec{A}}{|\\vec{A}|}"
+  },
+  {
+    "question": "|\\vec{A}|",
+    "answer": "\\sqrt{A_x^2 + A_y^2 + A_z^2}"
+  },
+  {
+    "question": "\\vec{A} \\cdot \\vec{B}",
+    "answer": "AB \\cos(\\theta) = A_x B_x + A_y B_y + A_z B_z"
+  },
+  {
+    "question": "\\vec{A} \\times \\vec{B}",
+    "answer": "AB \\sin(\\theta) \\hat{n}"
+  },
+  {
+    "question": "\\text{Projection of } \\vec{A} \\text{ on } \\vec{B}",
+    "answer": "\\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{B}|}"
+  },
+  {
+    "question": "\\text{Component of } \\vec{A} \\text{ along } \\vec{B}",
+    "answer": "\\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{B}|^2} \\vec{B}"
+  },
+  {
+    "question": "\\text{Scalar triple product } \\vec{A} \\cdot (\\vec{B} \\times \\vec{C})",
+    "answer": "A_x(B_y C_z - B_z C_y) - A_y(B_x C_z - B_z C_x) + A_z(B_x C_y - B_y C_x)"
+  },
+  {
+    "question": "\\text{Vector triple product } \\vec{A} \\times (\\vec{B} \\times \\vec{C})",
+    "answer": "(\\vec{A} \\cdot \\vec{C}) \\vec{B} - (\\vec{A} \\cdot \\vec{B}) \\vec{C}"
+  },
+  {
+    "question": "\\text{Position vector of point } P(x, y, z)",
+    "answer": "x \\hat{i} + y \\hat{j} + z \\hat{k}"
+  },
+  {
+    "question": "\\text{Distance between two points } A(x_1, y_1, z_1) \\text{ and } B(x_2, y_2, z_2)",
+    "answer": "\\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}"
+  },
+  {
+    "question": "\\text{Unit vector in the direction of } \\vec{A}",
+    "answer": "\\frac{\\vec{A}}{|\\vec{A}|}"
+  },
+  {
+    "question": "\\text{Angle } \\theta \\text{ between vectors } \\vec{A} \\text{ and } \\vec{B}",
+    "answer": "\\cos(\\theta) = \\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{A}||\\vec{B}|}"
+  },
+  {
+    "question": "\\text{Area of parallelogram formed by } \\vec{A} \\text{ and } \\vec{B}",
+    "answer": "|\\vec{A} \\times \\vec{B}|"
+  },
+  {
+    "question": "\\text{Area of triangle formed by } \\vec{A} \\text{ and } \\vec{B}",
+    "answer": "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|"
+  },
+  {
+    "question": "\\text{Volume of parallelepiped formed by } \\vec{A}, \\vec{B}, \\vec{C}",
+    "answer": "|\\vec{A} \\cdot (\\vec{B} \\times \\vec{C})|"
+  },
+  {
+    "question": "\\text{Midpoint vector between points } A \\text{ and } B",
+    "answer": "\\frac{\\vec{A} + \\vec{B}}{2}"
+  },
+  {
+    "question": "\\text{Section formula: point dividing } AB \\text{ in ratio } m:n",
+    "answer": "\\frac{n \\vec{A} + m \\vec{B}}{m + n}"
+  },
+  {
+    "question": "\\vec{A} \\cdot (\\vec{B} \\times \\vec{C})",
+    "answer": "Scalar\\;triple\\;product = \\text{Volume of parallelepiped}"
+  },
+  {
+    "question": "\\vec{A} \\cdot (\\vec{B} \\times \\vec{C})",
+    "answer": "A_x(B_y C_z - B_z C_y) - A_y(B_x C_z - B_z C_x) + A_z(B_x C_y - B_y C_x)"
+  },
+  {
+    "question": "\\vec{A} \\times (\\vec{B} \\times \\vec{C})",
+    "answer": "(\\vec{A} \\cdot \\vec{C})\\vec{B} - (\\vec{A} \\cdot \\vec{B})\\vec{C}"
+  },
+  {
+    "question": "\\vec{A} \\cdot (\\vec{B} + \\vec{C})",
+    "answer": "\\vec{A} \\cdot \\vec{B} + \\vec{A} \\cdot \\vec{C}"
+  },
+  {
+    "question": "\\vec{A} \\times (\\vec{B} + \\vec{C})",
+    "answer": "\\vec{A} \\times \\vec{B} + \\vec{A} \\times \\vec{C}"
+  },
+  {
+    "question": "If\\;\\vec{A} \\cdot \\vec{B} = 0",
+    "answer": "Vectors\\;are\\;perpendicular"
+  },
+  {
+    "question": "If\\;\\vec{A} \\times \\vec{B} = \\vec{0}",
+    "answer": "Vectors\\;are\\;parallel"
+  },
+  {
+    "question": "\\text{Area of triangle with vertices A, B, C}",
+    "answer": "\\frac{1}{2}|(\\vec{AB} \\times \\vec{AC})|"
+  },
+  {
+    "question": "\\text{Condition for coplanarity of vectors } \\vec{A}, \\vec{B}, \\vec{C}",
+    "answer": "\\vec{A} \\cdot (\\vec{B} \\times \\vec{C}) = 0"
+  },
+  {
+    "question": "\\text{Angle between two vectors using dot product}",
+    "answer": "\\cos(\\theta) = \\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{A}||\\vec{B}|}"
+  },
+  {
+    "question": "\\text{Torque: } \\vec{\\tau} = \\vec{r} \\times \\vec{F}",
+    "answer": "Used\\;to\\;find\\;rotational\\;effect\\;of\\;force"
+  },
+  {
+    "question": "\\text{Angular momentum: } \\vec{L} = \\vec{r} \\times \\vec{p}",
+    "answer": "Where\\;\\vec{p} = m\\vec{v}"
+  },
+  {
+    "question": "\\text{Work done: } W = \\vec{F} \\cdot \\vec{d}",
+    "answer": "Scalar\\;product\\;of\\;force\\;and\\;displacement"
+  },
+  {
+    "question": "\\text{Vector identity: } (\\vec{A} \\times \\vec{B}) \\cdot (\\vec{C} \\times \\vec{D})",
+    "answer": "(\\vec{A} \\cdot \\vec{C})(\\vec{B} \\cdot \\vec{D}) - (\\vec{A} \\cdot \\vec{D})(\\vec{B} \\cdot \\vec{C})"
+  },
+  {
+    "question": "\\text{Vector identity: } (\\vec{A} \\times \\vec{B})^2",
+    "answer": "|\\vec{A}|^2 |\\vec{B}|^2 - (\\vec{A} \\cdot \\vec{B})^2"
+  },
+  {
+    "question": "\\text{Vector projection of } \\vec{A} \\text{ on } \\vec{B}",
+    "answer": "\\frac{\\vec{A} \\cdot \\vec{B}}{|\\vec{B}|^2} \\vec{B}"
+  },
+  {
+    "question": "\\text{Using vector method to prove collinearity of 3 points A, B, C}",
+    "answer": "\\vec{AB} = k\\vec{AC},\\;k\\in\\mathbb{R}"
+  },
+  {
+    "question": "\\text{Resultant of multiple vectors in polygon}",
+    "answer": "If\\;arranged\\;head-to-tail\\;and\\;form\\;closed\\;polygon\\;then\\;net\\;vector=0"
+  },
+  {
+    "question": "\\text{Position vector of centroid of triangle ABC}",
+    "answer": "\\vec{G} = \\frac{\\vec{A} + \\vec{B} + \\vec{C}}{3}"
+  }
 ]
