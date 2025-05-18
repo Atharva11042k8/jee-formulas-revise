@@ -158,5 +158,9 @@
   {
     "question": "magnetic\\;moment",
     "answer": "\\sqrt{n(n+2)}"
+  },
+  {
+    "question":"value of h",
+    "answer":"6.626×10^{-34}"
   }
 ]
