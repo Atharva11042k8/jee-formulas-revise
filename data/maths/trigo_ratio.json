@@ -1,0 +1,542 @@
+[
+  {
+    "question": "sin^2(\\theta) + cos^2(\\theta)",
+    "answer": "1"
+  },
+  {
+    "question": "1 + tan^2(\\theta)",
+    "answer": "sec^2(\\theta)"
+  },
+  {
+    "question": "1 + cot^2(\\theta)",
+    "answer": "csc^2(\\theta)"
+  },
+  {
+    "question": "tan(\\theta)",
+    "answer": "\\frac{sin(\\theta)}{cos(\\theta)}"
+  },
+  {
+    "question": "cot(\\theta)",
+    "answer": "\\frac{cos(\\theta)}{sin(\\theta)}"
+  },
+  {
+    "question": "sec(\\theta)",
+    "answer": "\\frac{1}{cos(\\theta)}"
+  },
+  {
+    "question": "csc(\\theta)",
+    "answer": "\\frac{1}{sin(\\theta)}"
+  },
+  {
+    "question": "sin(\\theta) = x \\Rightarrow",
+    "answer": "cos(\\theta) = \\sqrt{1 - x^2}"
+  },
+  {
+    "question": "cos(\\theta) = x \\Rightarrow",
+    "answer": "sin(\\theta) = \\sqrt{1 - x^2}"
+  },
+  {
+    "question": "tan^2(\\theta) = sec^2(\\theta) - 1",
+    "answer": "cot^2(\\theta) = csc^2(\\theta) - 1"
+  },
+  {
+    "question": "sin(180^\\circ - \\theta)",
+    "answer": "sin(\\theta)"
+  },
+  {
+    "question": "sin(180^\\circ + \\theta)",
+    "answer": "-sin(\\theta)"
+  },
+  {
+    "question": "sin(90^\\circ - \\theta)",
+    "answer": "cos(\\theta)"
+  },
+  {
+    "question": "sin(90^\\circ + \\theta)",
+    "answer": "cos(\\theta)"
+  },
+  {
+    "question": "cos(180^\\circ - \\theta)",
+    "answer": "-cos(\\theta)"
+  },
+  {
+    "question": "cos(180^\\circ + \\theta)",
+    "answer": "-cos(\\theta)"
+  },
+  {
+    "question": "cos(90^\\circ - \\theta)",
+    "answer": "sin(\\theta)"
+  },
+  {
+    "question": "cos(90^\\circ + \\theta)",
+    "answer": "-sin(\\theta)"
+  },
+  {
+    "question": "tan(180^\\circ - \\theta)",
+    "answer": "-tan(\\theta)"
+  },
+  {
+    "question": "tan(180^\\circ + \\theta)",
+    "answer": "tan(\\theta)"
+  },
+  {
+    "question": "tan(90^\\circ - \\theta)",
+    "answer": "cot(\\theta)"
+  },
+  {
+    "question": "tan(90^\\circ + \\theta)",
+    "answer": "-cot(\\theta)"
+  },
+  {
+    "question": "cot(180^\\circ - \\theta)",
+    "answer": "-cot(\\theta)"
+  },
+  {
+    "question": "cot(180^\\circ + \\theta)",
+    "answer": "cot(\\theta)"
+  },
+  {
+    "question": "cot(90^\\circ - \\theta)",
+    "answer": "tan(\\theta)"
+  },
+  {
+    "question": "cot(90^\\circ + \\theta)",
+    "answer": "-tan(\\theta)"
+  },
+  {
+    "question": "ASTC Rule - Quadrant I (0° to 90°)",
+    "answer": "All trigonometric ratios are positive"
+  },
+  {
+    "question": "ASTC Rule - Quadrant II (90° to 180°)",
+    "answer": "Only sin and csc are positive"
+  },
+  {
+    "question": "ASTC Rule - Quadrant III (180° to 270°)",
+    "answer": "Only tan and cot are positive"
+  },
+  {
+    "question": "ASTC Rule - Quadrant IV (270° to 360°)",
+    "answer": "Only cos and sec are positive"
+  },
+  {
+    "question": "ASTC Mnemonic",
+    "answer": "All Students Take Calculus"
+  },
+  {
+    "question": "sin(0^\\circ)",
+    "answer": "0"
+  },
+  {
+    "question": "sin(30^\\circ)",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "sin(45^\\circ)",
+    "answer": "\\frac{1}{\\sqrt{2}}"
+  },
+  {
+    "question": "sin(60^\\circ)",
+    "answer": "\\frac{\\sqrt{3}}{2}"
+  },
+  {
+    "question": "sin(90^\\circ)",
+    "answer": "1"
+  },
+  {
+    "question": "cos(0^\\circ)",
+    "answer": "1"
+  },
+  {
+    "question": "cos(30^\\circ)",
+    "answer": "\\frac{\\sqrt{3}}{2}"
+  },
+  {
+    "question": "cos(45^\\circ)",
+    "answer": "\\frac{1}{\\sqrt{2}}"
+  },
+  {
+    "question": "cos(60^\\circ)",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "cos(90^\\circ)",
+    "answer": "0"
+  },
+  {
+    "question": "tan(0^\\circ)",
+    "answer": "0"
+  },
+  {
+    "question": "tan(30^\\circ)",
+    "answer": "\\frac{1}{\\sqrt{3}}"
+  },
+  {
+    "question": "tan(45^\\circ)",
+    "answer": "1"
+  },
+  {
+    "question": "tan(60^\\circ)",
+    "answer": "\\sqrt{3}"
+  },
+  {
+    "question": "tan(90^\\circ)",
+    "answer": "\\infty"
+  },
+  {
+    "question": "sin(18^\\circ)",
+    "answer": "\\frac{\\sqrt{5}-1}{4}"
+  },
+  {
+    "question": "cos(36^\\circ)",
+    "answer": "\\frac{\\sqrt{5}+1}{4}"
+  },
+  {
+    "question": "sin(54^\\circ)",
+    "answer": "\\frac{\\sqrt{5}+1}{4}"
+  },
+  {
+    "question": "cos(72^\\circ)",
+    "answer": "\\frac{\\sqrt{5}-1}{4}"
+  },
+  {
+    "question": "sin(75^\\circ)",
+    "answer": "\\frac{\\sqrt{6} + \\sqrt{2}}{4}"
+  },
+  {
+    "question": "cos(75^\\circ)",
+    "answer": "\\frac{\\sqrt{6} - \\sqrt{2}}{4}"
+  },
+  {
+    "question": "tan(75^\\circ)",
+    "answer": "2 + \\sqrt{3}"
+  },
+  {
+    "question": "sin\\left(\\frac{\\pi}{6}\\right)",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "cos\\left(\\frac{\\pi}{3}\\right)",
+    "answer": "\\frac{1}{2}"
+  },
+  {
+    "question": "tan\\left(\\frac{\\pi}{4}\\right)",
+    "answer": "1"
+  },
+  {
+    "question": "sin(a + b)",
+    "answer": "sin(a)cos(b) + cos(a)sin(b)"
+  },
+  {
+    "question": "sin(a - b)",
+    "answer": "sin(a)cos(b) - cos(a)sin(b)"
+  },
+  {
+    "question": "cos(a + b)",
+    "answer": "cos(a)cos(b) - sin(a)sin(b)"
+  },
+  {
+    "question": "cos(a - b)",
+    "answer": "cos(a)cos(b) + sin(a)sin(b)"
+  },
+  {
+    "question": "tan(a + b)",
+    "answer": "\\frac{tan(a) + tan(b)}{1 - tan(a)tan(b)}"
+  },
+  {
+    "question": "tan(a - b)",
+    "answer": "\\frac{tan(a) - tan(b)}{1 + tan(a)tan(b)}"
+  },
+  {
+    "question": "cot(a + b)",
+    "answer": "\\frac{cot(a)cot(b) - 1}{cot(a) + cot(b)}"
+  },
+  {
+    "question": "cot(a - b)",
+    "answer": "\\frac{cot(a)cot(b) + 1}{cot(b) - cot(a)}"
+  },
+  {
+    "question": "2sin(a)cos(b)",
+    "answer": "sin(a + b) + sin(a - b)"
+  },
+  {
+    "question": "2cos(a)sin(b)",
+    "answer": "sin(a + b) - sin(a - b)"
+  },
+  {
+    "question": "2cos(a)cos(b)",
+    "answer": "cos(a + b) + cos(a - b)"
+  },
+  {
+    "question": "2sin(a)sin(b)",
+    "answer": "cos(a - b) - cos(a + b)"
+  },
+  {
+    "question": "sin(a) + sin(b)",
+    "answer": "2sin\\left(\\frac{a + b}{2}\\right)cos\\left(\\frac{a - b}{2}\\right)"
+  },
+  {
+    "question": "sin(a) - sin(b)",
+    "answer": "2cos\\left(\\frac{a + b}{2}\\right)sin\\left(\\frac{a - b}{2}\\right)"
+  },
+  {
+    "question": "cos(a) + cos(b)",
+    "answer": "2cos\\left(\\frac{a + b}{2}\\right)cos\\left(\\frac{a - b}{2}\\right)"
+  },
+  {
+    "question": "cos(a) - cos(b)",
+    "answer": "-2sin\\left(\\frac{a + b}{2}\\right)sin\\left(\\frac{a - b}{2}\\right)"
+  },
+  {
+    "question": "(sin(x) + cos(x))^2",
+    "answer": "1 + sin(2x)"
+  },
+  {
+    "question": "(sin(x) - cos(x))^2",
+    "answer": "1 - sin(2x)"
+  },
+  {
+    "question": "sin^4(x) + cos^4(x)",
+    "answer": "1 - \\frac{1}{2}sin^2(2x)"
+  },
+  {
+    "question": "sin^6(x) + cos^6(x)",
+    "answer": "1 - \\frac{3}{4}sin^2(2x)"
+  },
+  {
+    "question": "tan\\left(\\frac{\\pi}{4} + x\\right)",
+    "answer": "\\frac{1 + tan(x)}{1 - tan(x)}"
+  },
+  {
+    "question": "tan\\left(\\frac{\\pi}{4} - x\\right)",
+    "answer": "\\frac{1 - tan(x)}{1 + tan(x)}"
+  },
+  {
+    "question": "sin^2(x) - cos^2(x)",
+    "answer": "-cos(2x)"
+  },
+  {
+    "question": "cos^2(x) - sin^2(x)",
+    "answer": "cos(2x)"
+  },
+  {
+    "question": "1 - 2sin^2(x)",
+    "answer": "cos(2x)"
+  },
+  {
+    "question": "2cos^2(x) - 1",
+    "answer": "cos(2x)"
+  },
+  {
+    "question": "1 + tan^2(x)",
+    "answer": "sec^2(x)"
+  },
+  {
+    "question": "1 + cot^2(x)",
+    "answer": "csc^2(x)"
+  },
+  {
+    "question": "sin(3x)",
+    "answer": "3sin(x) - 4sin^3(x)"
+  },
+  {
+    "question": "cos(3x)",
+    "answer": "4cos^3(x) - 3cos(x)"
+  },
+  {
+    "question": "tan(3x)",
+    "answer": "\\frac{3tan(x) - tan^3(x)}{1 - 3tan^2(x)}"
+  },
+  {
+    "question": "cot(3x)",
+    "answer": "\\frac{cot^3(x) - 3cot(x)}{3cot^2(x) - 1}"
+  },
+  {
+    "question": "sin(2x)",
+    "answer": "2sin(x)cos(x)"
+  },
+  {
+    "question": "cos(2x)",
+    "answer": "cos^2(x) - sin^2(x)"
+  },
+  {
+    "question": "cos(2x)",
+    "answer": "2cos^2(x) - 1"
+  },
+  {
+    "question": "cos(2x)",
+    "answer": "1 - 2sin^2(x)"
+  },
+  {
+    "question": "tan(2x)",
+    "answer": "\\frac{2tan(x)}{1 - tan^2(x)}"
+  },
+  {
+    "question": "sin(4x)",
+    "answer": "2sin(2x)cos(2x)"
+  },
+  {
+    "question": "cos(4x)",
+    "answer": "1 - 2sin^2(2x)"
+  },
+  {
+    "question": "cos(4x)",
+    "answer": "8cos^4(x) - 8cos^2(x) + 1"
+  },
+  {
+    "question": "sin(5x)",
+    "answer": "5sin(x) - 20sin^3(x) + 16sin^5(x)"
+  },
+  {
+    "question": "cos(5x)",
+    "answer": "16cos^5(x) - 20cos^3(x) + 5cos(x)"
+  },
+  {
+    "question": "tan(2x)",
+    "answer": "\\frac{2tan(x)}{1 - tan^2(x)}"
+  },
+  {
+    "question": "tan(3x)",
+    "answer": "\\frac{3tan(x) - tan^3(x)}{1 - 3tan^2(x)}"
+  },
+  {
+    "question": "tan(4x)",
+    "answer": "\\frac{4tan(x) - 4tan^3(x)}{1 - 6tan^2(x) + tan^4(x)}"
+  },
+  {
+    "question": "tan(5x)",
+    "answer": "\\frac{5tan(x) - 10tan^3(x) + tan^5(x)}{1 - 10tan^2(x) + 5tan^4(x)}"
+  },
+  {
+    "question": "tan(n x) in terms of tan(x)",
+    "answer": "Use De Moivre’s identity or recursive expansion (derived using tan addition formula recursively)"
+  },
+  {
+    "question": "sin(a)sin\\left(\\frac{\\pi}{3} - a\\right)sin\\left(\\frac{\\pi}{3} + a\\right)",
+    "answer": "\\frac{sin(3a)}{4}"
+  },
+  {
+    "question": "cos(a)cos\\left(\\frac{\\pi}{3} - a\\right)cos\\left(\\frac{\\pi}{3} + a\\right)",
+    "answer": "\\frac{cos(3a)}{4}"
+  },
+  {
+    "question": "sin(x) + sin\\left(\\frac{2\\pi}{3} - x\\right) + sin\\left(\\frac{2\\pi}{3} + x\\right)",
+    "answer": "0"
+  },
+  {
+    "question": "cos(x) + cos\\left(\\frac{2\\pi}{3} - x\\right) + cos\\left(\\frac{2\\pi}{3} + x\\right)",
+    "answer": "0"
+  },
+  {
+    "question": "sin(a) + sin(b) + sin(c),\\text{ where } a + b + c = \\pi",
+    "answer": "4cos\\left(\\frac{a}{2}\\right)cos\\left(\\frac{b}{2}\\right)cos\\left(\\frac{c}{2}\\right)"
+  },
+  {
+    "question": "cos(a) + cos(b) + cos(c),\\text{ where } a + b + c = \\pi",
+    "answer": "1 + 4sin\\left(\\frac{a}{2}\\right)sin\\left(\\frac{b}{2}\\right)sin\\left(\\frac{c}{2}\\right)"
+  },
+  {
+    "question": "sin^6(x) + cos^6(x)",
+    "answer": "1 - \\frac{3}{4}sin^2(2x)"
+  },
+  {
+    "question": "sin(x)cos(x)sin(2x)",
+    "answer": "\\frac{1}{4}sin(4x)"
+  },
+  {
+    "question": "sin(x)cos(x)cos(2x)",
+    "answer": "\\frac{1}{4}sin(4x)"
+  },
+  {
+    "question": "cos(a)cos(2a)cos(4a)\\cdots cos(2^{n-1}a)",
+    "answer": "\\frac{\\sin(2^n a)}{2^n \\sin(a)}"
+  },
+  {
+    "question": "sin(a)sin(2a)sin(4a)\\cdots sin(2^{n-1}a)",
+    "answer": "2^{-n(n-1)/2} \\sqrt{\\frac{1 - \\cos(2^n a)}{1 - \\cos(a)}}"
+  },
+  {
+    "question": "cos(a) + cos(a + d) + cos(a + 2d) + \\cdots + cos(a + (n-1)d)",
+    "answer": "\\frac{\\sin\\left(\\frac{nd}{2}\\right) \\cos\\left(a + \\frac{(n-1)d}{2}\\right)}{\\sin\\left(\\frac{d}{2}\\right)}"
+  },
+  {
+    "question": "sin(a) + sin(a + d) + sin(a + 2d) + \\cdots + sin(a + (n-1)d)",
+    "answer": "\\frac{\\sin\\left(\\frac{nd}{2}\\right) \\sin\\left(a + \\frac{(n-1)d}{2}\\right)}{\\sin\\left(\\frac{d}{2}\\right)}"
+  },
+  {
+    "question": "Range \\text{ of } sin(x)",
+    "answer": "[-1, 1]"
+  },
+  {
+    "question": "Range \\text{ of } cos(x)",
+    "answer": "[-1, 1]"
+  },
+  {
+    "question": "Range \\text{ of } tan(x)",
+    "answer": "(-\\infty, \\infty)"
+  },
+  {
+    "question": "Range \\text{ of } sin^2(x)",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "Range \\text{ of } cos^2(x)",
+    "answer": "[0, 1]"
+  },
+  {
+    "question": "Range \\text{ of } sin(x) + cos(x)",
+    "answer": "[-\\sqrt{2}, \\sqrt{2}]"
+  },
+  {
+    "question": "Range \\text{ of } sin(x) - cos(x)",
+    "answer": "[-\\sqrt{2}, \\sqrt{2}]"
+  },
+  {
+    "question": "Range \\text{ of } sin(x)cos(x)",
+    "answer": "[-\\frac{1}{2}, \\frac{1}{2}]"
+  },
+  {
+    "question": "Range \\text{ of } 1 + sin(x)",
+    "answer": "[0, 2]"
+  },
+  {
+    "question": "Range \\text{ of } 1 - cos(x)",
+    "answer": "[0, 2]"
+  },
+  {
+    "question": "sin(a) + sin(a + d) + sin(a + 2d) + \\cdots + sin(a + (n-1)d)",
+    "answer": "\\frac{\\sin\\left(\\frac{nd}{2}\\right) \\sin\\left(a + \\frac{(n-1)d}{2}\\right)}{\\sin\\left(\\frac{d}{2}\\right)}"
+  },
+  {
+    "question": "cos(a) + cos(a + d) + cos(a + 2d) + \\cdots + cos(a + (n-1)d)",
+    "answer": "\\frac{\\sin\\left(\\frac{nd}{2}\\right) \\cos\\left(a + \\frac{(n-1)d}{2}\\right)}{\\sin\\left(\\frac{d}{2}\\right)}"
+  },
+  {
+    "question": "tan(a) + tan(a + d) + \\cdots + tan(a + (n-1)d), \\text{ where } a + \\frac{(n-1)d}{2} = \\frac{\\pi}{2}",
+    "answer": "\\infty \\text{ (tends to infinity due to asymptotes)}"
+  },
+  {
+    "question": "sin(A) + sin(B) = 0",
+    "answer": "A + B = n\\pi, \\quad \\text{or} \\quad A - B = m\\pi, \\quad n,m \\in \\mathbb{Z}"
+  },
+  {
+    "question": "cos(A) + cos(B) = 0",
+    "answer": "A + B = (2n + 1)\\pi, \\quad \\text{or} \\quad A - B = (2m + 1)\\pi, \\quad n,m \\in \\mathbb{Z}"
+  },
+  {
+    "question": "If \\quad sin(x) + sin(y) + sin(z) = 0 \\quad \\text{and} \\quad x + y + z = \\pi",
+    "answer": "2cos\\left(\\frac{x}{2}\\right)cos\\left(\\frac{y}{2}\\right)cos\\left(\\frac{z}{2}\\right) = 0"
+  },
+  {
+    "question": "If \\quad tan(A) + tan(B) + tan(C) = tan(A)tan(B)tan(C), \\quad A + B + C = \\pi",
+    "answer": "A, B, C \\text{ are angles of a triangle}"
+  },
+  {
+    "question": "sin^2(A) + sin^2(B) + sin^2(C) + 2sin(A)sin(B)sin(C) = 1, \\quad A + B + C = \\pi",
+    "answer": "True"
+  },
+  {
+    "question": "sin^2(A) + cos^2(B) = 1, \\quad A = B",
+    "answer": "Identity holds"
+  }
+]
