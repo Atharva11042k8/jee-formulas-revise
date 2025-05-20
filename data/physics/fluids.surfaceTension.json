@@ -1,0 +1,87 @@
+[
+    {
+        "question":"\\text{surface tension(s)=?}",
+        "answer":"s=\\frac{L}{L}"
+    },
+    {
+        "question":"\\text{for soup solution s=?}",
+        "answer":"s=2s"
+    },
+    {
+        "question":"\\text{force acts on ring due to S.T}",
+        "answer":"mg\\:+\\:4\\pi rs"
+    },
+    {
+        "question":"\\text{force acts on disk due to S.T}",
+        "answer":"mg\\:+\\:2\\pi rs"
+    },
+    {
+        "question":"\\text{force acts on anullar ring due to S.T}",
+        "answer":"mg\\:+\\:2\\pi s(r_1+r_2)"
+    },
+    {
+        "question":"\\text{force acts on rectrangular plate due to S.T}",
+        "answer":"mg\\:+\\:2s(a+b)"
+    },
+    {
+        "question":"\\text{force acts on wire or thin rod due to S.T}",
+        "answer":"f = 2sl"
+    },
+    {
+        "question":"\\text{surface energy(E)=?}",
+        "answer":"E=SA"
+    },
+    {
+        "question":"\\text{surface energy(E) for drop}",
+        "answer":"E=s.4\\pi r^2"
+    },
+    {
+        "question":"\\text{surface energy(E) for bubble}",
+        "answer":"E=2\\times s.4\\pi r^2"
+    },
+    {
+        "question":"\\text{surface energy(E) for soap bubble}",
+        "answer":"E=2\\times 2s.4\\pi r^2"
+    },
+    {
+        "question":"\\text{work done?}",
+        "answer":"E=SA"
+    },
+    {
+        "question":"cos(\\theta)\\;when\\;drop\\;is\\;droped\\;on\\;surface",
+        "answer":"cos(\\theta)=\\frac{T_2-T_1}{T_3}"
+    },
+    {
+        "question":"Δp\\;in\\;liquid\\;drop",
+        "answer":"p_{concave}=p_{convex}+\\frac{2S}{R}\\;or\\;p_{inside}=p_{outside}+\\frac{2S}{R}"
+    },
+    {
+        "question":"Δ p\\;in\\;soap\\;bubble",
+        "answer":"p_{inside}=p_{outside}+\\frac{4S}{R}"
+    },
+    {
+        "question":"NOTE: if 2 surface(bubble)\\--->Δ p=\\frac{4S}{R}.\\;and\\;if 1 surface(drop)\\--->Δ p=\\frac{2S}{R}",
+        "answer":""
+    },
+    {
+        "question":"\\text{air bubble inside liquid a liqid}",
+        "answer":"p_i=p_a+\\rho gh+\\frac{2s}{R}"
+    },
+    {
+        "question":"\\text{height in capillary rise}",
+        "answer":"h=\\frac{2Scos(\\theta)}{r\\rho g}"
+    },
+    {
+        "question":"\\text{when 2 bubble collapse externally,R=?}",
+        "answer":"R=\\frac{r_1r_2}{r_2-r_1}"
+    },
+    {
+        "question":"\\text{when 2 bubble collapse internally,R=?}",
+        "answer":"R=\\frac{r_1r_2}{r_2+r_1}"
+    },
+    {
+        "question":"\\text{force requires to seperate glass plates}",
+        "answer":"F=\\frac{2SAcos(\\theta)}{d}"
+    }
+    
+]
