@@ -206,107 +206,102 @@
             </form>
         </div>
     </div>
-
     <script>
-        const loginForm = document.getElementById('loginForm');
-        const usernameInput = document.getElementById('username');
-        const passwordInput = document.getElementById('password');
-        const errorMessageDiv = document.getElementById('errorMessage'); // Renamed for clarity
+    const loginForm = document.getElementById('loginForm');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    const errorMessageDiv = document.getElementById('errorMessage');
 
-        // --- IMPORTANT: SET YOUR USERNAME AND PASSWORD HERE ---
-        const CORRECT_USERNAME = "Hadke"; // e.g., "agent_smith"
-        const CORRECT_PASSWORD = "Saheb"; // e.g., "th3Matr!x"
-        // --- IMPORTANT: SET YOUR MAIN PROJECT'S URL HERE ---
-        const MAIN_PROJECT_URL = "real.html"; // e.g., "https://www.yourmainproject.com/dashboard"
+    const CORRECT_USERNAME = "Hadke";
+    const MAIN_PROJECT_URL = "real.html";
 
+    function getCurrentTimePassword() {
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = now.getMinutes();
 
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault();
+        hours = hours % 12;
+        hours = hours === 0 ? 12 : hours;
 
-            const enteredUsername = usernameInput.value;
-            const enteredPassword = passwordInput.value;
+        return `${hours}${minutes.toString().padStart(2, '0')}`.replace(/^0+/, '');
+    }
 
-            if (!CORRECT_USERNAME || !CORRECT_PASSWORD || !MAIN_PROJECT_URL) {
-                errorMessageDiv.textContent = "CRITICAL SYSTEM ERROR: Authentication parameters not configured. Contact administrator.";
-                errorMessageDiv.style.display = 'block';
-                gsap.fromTo(errorMessageDiv, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" });
-                console.error("Login details (CORRECT_USERNAME, CORRECT_PASSWORD) or MAIN_PROJECT_URL are not set in the script.");
-                return;
-            }
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
 
-            if (enteredUsername === CORRECT_USERNAME && enteredPassword === CORRECT_PASSWORD) {
-                errorMessageDiv.style.display = 'none';
+        const enteredUsername = usernameInput.value.trim();
+        const enteredPassword = passwordInput.value.trim();
+        const correctPassword = getCurrentTimePassword();
 
-                // GSAP animation for success before redirect
-                gsap.to(".login-container", {
-                    duration: 0.7,
-                    opacity: 0,
-                    scale: 0.8,
-                    rotationX: 30, // Tilt effect
-                    ease: "power3.in",
-                    onComplete: () => {
-                        window.location.href = MAIN_PROJECT_URL;
-                    }
-                });
+        if (!CORRECT_USERNAME || !MAIN_PROJECT_URL) {
+            errorMessageDiv.textContent = "CRITICAL SYSTEM ERROR: Authentication parameters not configured. Contact administrator.";
+            errorMessageDiv.style.display = 'block';
+            gsap.fromTo(errorMessageDiv, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" });
+            return;
+        }
 
-            } else {
-                errorMessageDiv.textContent = "ACCESS DENIED";
-                errorMessageDiv.style.display = 'block';
-                // GSAP animation for error message
-                gsap.fromTo(errorMessageDiv, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" });
+        if (enteredUsername === CORRECT_USERNAME && enteredPassword === correctPassword) {
+            errorMessageDiv.style.display = 'none';
 
-                // GSAP shake animation for the form
-                gsap.fromTo(loginForm, { x: 0 }, {
-                    duration: 0.6,
-                    x: 10,
-                    ease: "elastic.out(1, 0.3)",
-                    onComplete: () => gsap.set(loginForm, { x: 0 }) // Reset position
-                });
-                // A more pronounced shake:
-                // gsap.to(loginForm, { duration: 0.07, x: -8, repeat: 5, yoyo: true, clearProps: "x" });
+            gsap.to(".login-container", {
+                duration: 0.7,
+                opacity: 0,
+                scale: 0.8,
+                rotationX: 30,
+                ease: "power3.in",
+                onComplete: () => {
+                    window.location.href = MAIN_PROJECT_URL;
+                }
+            });
+        } else {
+            errorMessageDiv.textContent = "ACCESS DENIED";
+            errorMessageDiv.style.display = 'block';
+            gsap.fromTo(errorMessageDiv, { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" });
 
-
-                usernameInput.focus();
-            }
-        });
-
-        // --- GSAP Animations on Load ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-            tl.to(".login-container", { duration: 1, opacity: 1, scale: 1, delay: 0.2 })
-              .to(".login-title", { duration: 0.8, opacity: 1, y: 0 }, "-=0.6")
-              .to(".login-subtitle", { duration: 0.7, opacity: 1, y: 0 }, "-=0.5")
-              .to(".input-group", { duration: 0.6, opacity: 1, x: 0, stagger: 0.2 }, "-=0.4")
-              .to(".login-button", { duration: 0.8, opacity: 1, y: 0 }, "-=0.3");
-
-            // Subtle mouse move effect on the container for a bit of depth
-            const container = document.querySelector('.login-container');
-            document.body.addEventListener('mousemove', (e) => {
-                if (!container) return;
-                const rect = container.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-
-                gsap.to(container, {
-                    duration: 1,
-                    rotationY: x * 0.015, // Adjust multiplier for sensitivity
-                    rotationX: -y * 0.015, // Adjust multiplier for sensitivity
-                    ease: "power1.out"
-                });
+            gsap.fromTo(loginForm, { x: 0 }, {
+                duration: 0.6,
+                x: 10,
+                ease: "elastic.out(1, 0.3)",
+                onComplete: () => gsap.set(loginForm, { x: 0 })
             });
 
-            // Reset rotation when mouse leaves the body (or a wrapper)
-            document.body.addEventListener('mouseleave', () => {
-                 gsap.to(container, {
-                    duration: 0.8,
-                    rotationY: 0,
-                    rotationX: 0,
-                    ease: "power1.out"
-                });
+            usernameInput.focus();
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+        tl.to(".login-container", { duration: 1, opacity: 1, scale: 1, delay: 0.2 })
+          .to(".login-title", { duration: 0.8, opacity: 1, y: 0 }, "-=0.6")
+          .to(".login-subtitle", { duration: 0.7, opacity: 1, y: 0 }, "-=0.5")
+          .to(".input-group", { duration: 0.6, opacity: 1, x: 0, stagger: 0.2 }, "-=0.4")
+          .to(".login-button", { duration: 0.8, opacity: 1, y: 0 }, "-=0.3");
+
+        const container = document.querySelector('.login-container');
+        document.body.addEventListener('mousemove', (e) => {
+            if (!container) return;
+            const rect = container.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            gsap.to(container, {
+                duration: 1,
+                rotationY: x * 0.015,
+                rotationX: -y * 0.015,
+                ease: "power1.out"
             });
         });
 
+        document.body.addEventListener('mouseleave', () => {
+            gsap.to(container, {
+                duration: 0.8,
+                rotationY: 0,
+                rotationX: 0,
+                ease: "power1.out"
+            });
+        });
+    });
     </script>
 </body>
   </html>
