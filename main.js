@@ -1,7 +1,7 @@
 const subjects = {
-  Physics: ['UDME','vectors','calculus','kinematics','NLM','circular motion','work,power, energy','center of mass','rotation','gravitation','heat'],
+  Physics: ['UDME','vectors','calculus','kinematics','NLM','circular motion','work,power, energy','center of mass','rotation','gravitation','heat','fluids.surfaceTension'],
   Chemistry: ['Mole concept','Atomic structure','periodic table','chemical bonding','gaseous state','thermo-D','equilibrium','IUPAC','Goc','isomerism'],
-  Maths: ['Trigo_ratio','quadratic','trigo eqn','inequalities','SnS','Binomial','PnC','probo','straight lines','Circles','fumctions','ITF']
+  Maths: ['Trigo_ratio','quadratic','trigo eqn','inequalities','SnS','Binomial','PnC','probo','straight lines','Circles','functions','ITF']
 };
 
 const subjectSelect = document.getElementById('subject-select');
