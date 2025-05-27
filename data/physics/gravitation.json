@@ -45,7 +45,7 @@
     },
     {
         "question":"\\text{gravitational field due to solid sphere(inside,outside,at surface)}",
-        "answer":"\\vec{E}_{in}=\\frac{Gmr}{R^3}\\;,\\;\\vec{E}_{surface}=\\frac{Gm}{R^2}\\,\\vec{E}_{out}=\\frac{Gm}{r^2}"
+        "answer":"\\vec{E}_{in}=\\frac{Gmr}{R^3}\\;,\\;\\vec{E}_{surface}=\\frac{Gm}{R^2}\\;,\\vec{E}_{out}=\\frac{Gm}{r^2}"
     },
     {
         "question":"\\text{gravitational field due to infinite long wire}",
@@ -97,7 +97,7 @@
     },
     {
         "question":"\\text{potential energy of a satellite}",
-        "answer":"PE\\;=\\;\\frac{GMm}{r}"
+        "answer":"PE\\;=\\;-\\frac{GMm}{r}"
     },
     {
         "question":"\\text{total energy of a satellite}",
