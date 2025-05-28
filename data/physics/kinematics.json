@@ -1,6 +1,6 @@
 [
     {
-        "question":"\\text all formulas of acceleration",
+        "question":"\\text{all formulas of acceleration}",
         "answer":"a=\\frac{dv}{dt}\\; or\\; a=v\\frac{dv}{dx}\\; or\\;a=\\frac{d^2x}{dt^2}"
     },
     {
