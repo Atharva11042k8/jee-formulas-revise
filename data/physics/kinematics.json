@@ -33,7 +33,7 @@
     },
     {
         "question":"\\text{equation of trajectory}",
-        "answer":"y=x\\:tan(\\theta)-\\frac{g\\:x^2}{2\\u^2||:cos^2(\\theta)}"
+        "answer":"y=x\\;tan(\\theta)-\\frac{g\\:x^2}{2\\:u^2\\:cos^2(\\theta)}"
     },
     {
         "question":"\\text{complimentort angles}",
