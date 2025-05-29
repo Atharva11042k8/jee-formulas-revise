@@ -5,7 +5,7 @@
     },
     {
         "question":"displacemen\\;at\\;n^{th}\\;second(s_n)",
-        "answer":"u=\\frac{a}{2}(2n-1)"
+        "answer":"u+\\frac{a}{2}(2n-1)"
     },
     {
         "question":"\\text{3 kinematical equations}",
