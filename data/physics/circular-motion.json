@@ -77,11 +77,11 @@
         "answer":"v_{min}\\;=\\;\\sqrt{rg[\\frac{tan(\\theta)-µ}{1+µ\\:tan(\\theta)}]}"
     },
     {
-        "question":"\\text{partical on verticular motion,velocity at bottom,top and at midpoint",
+        "question":"\\text{partical on verticular motion,velocity at bottom,top and at midpoint}",
         "answer":"v_b\\sqrt{5gr},\\;v_m\\sqrt{3gr},v_t\\sqrt{gr}"
     },
     {
-        "question":"\\text{partical on verticular motion, velocity at any point,and point at which contact looses",
+        "question":"\\text{partical on verticular motion, velocity at any point,and point at which contact looses}",
         "answer":"v=\\sqrt{u^2+2gr(1-cos(\\theta)},\\;cos(\\theta)=\\frac{u^2+2gr}{3gr}"
     }
 ]
