@@ -77,7 +77,7 @@
     },
     {
         "question":"\\text{self gravitational potential energy of sphere(hollow,solid)}",
-        "answer":"U_{hollow}\\;=\\;\\frac{3}{5}\\frac{GM^2}{R}\\;and\\;U_{solid}\\;=\\;\\frac{1}{2}\\frac{GM^2}{R}"
+        "answer":"U_{hollow}\\;=\\;\\frac{1}{2}\\frac{GM^2}{R}\\;and\\;U_{solid}\\;=\\;\\frac{3}{5}\\frac{GM^2}{R}"
     },
     {
         "question":"\\text{escape velocity}",
