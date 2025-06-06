@@ -12,8 +12,8 @@
     "answer":"1\\;erg\\;=\\;10^{-7}j"
   },
   {
-    "question":"distance of centroid from any edge in equilateral triangle",
-    "answer":"\\frac{1}{2\\sqrt{3}}a"
+    "question":"distance of centroid from midoint of edges equilateral triangle and distance of centriod to vertex",
+    "answer":"\\frac{1}{2\\sqrt{3}}a\\;\\;\\;and v\\;ertex \\;ka\\;\\frac{2}{3}h"
   },
   {
     "question":"",
