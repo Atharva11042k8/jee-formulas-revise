@@ -25,7 +25,7 @@
     },
     {
         "question":"\\text{varition in g due to rotation}",
-        "answer":"g\\prime\\;=\\;g-R\\omega^2cos\\theta"
+        "answer":"g\\prime\\;=\\;g-R\\omega^2cos^2(\\theta)"
     },
     {
         "question":"\\text{gravitational field}",
@@ -114,5 +114,13 @@
     {
         "question":"\\text{according to keplers 2nd law dA/dt=?}",
         "answer":"\\frac{L}{2m}"
+    },
+    {
+        "question":"{\\frac{2π}{24×60×60}}^2\\;=\\;?",
+        "answer":"5.29×10^{-9}"
+    },
+    {
+        "question":"6400×{\\frac{2π}{24×60×60}}^2\\;=\\;?",
+        "answer":"3.39×10^{-5}"
     }
 ]
